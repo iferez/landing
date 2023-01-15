@@ -1,8 +1,13 @@
+import Header from "./components/header/Header"
+import Home from "./components/home/Home"
+import "./App.css"
+
 function App() {
 
   return (
     <div className="App">
-     <h1>Iván Ferez</h1>
+     <Header />
+     <Home />
     </div>
   )
 }

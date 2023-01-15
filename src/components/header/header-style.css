@@ -1,0 +1,26 @@
+.header{
+    height: 64px;
+    box-shadow: 0px 1px 5px 2px #dbdbdb46 !important;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.header div{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+  max-height: 48px;
+}
+
+.header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    list-style-type:none;
+}

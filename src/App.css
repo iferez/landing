@@ -9,6 +9,8 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #333333;
 }
 
 @media (min-width: 768px) {
