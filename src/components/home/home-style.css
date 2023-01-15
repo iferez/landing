@@ -1,4 +1,4 @@
-.full-screen{
+.home-full-screen{
     min-height: -webkit-calc(100vh - 64px);
     min-height: -moz-calc(100vh - 64px);
     min-height: calc(100vh - 64px);

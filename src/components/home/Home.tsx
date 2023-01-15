@@ -1,12 +1,13 @@
 import React from "react";
-import "./home-style.css";
 import iferez from "../../assets/img/perfiliferezz.png";
+import pdf from "../../assets/ferezivan.pdf";
+import "./home-style.css";
 
 function Home() {
   return (
     <section className="home">
       <article className="container">
-        <div className="row full-screen">
+        <div className="row home-full-screen">
           <div className="col-md-6">
             <h1>IVÁN FEREZ</h1>
             <h2>FRONT END DEVELOPER</h2>
@@ -19,15 +20,21 @@ function Home() {
             <img src={iferez} className="img-fluid" alt="Ivan Ferez" />
           </div>
           <div className="buttons-style">
-            <button className="btn rounded-pill">
+            <a href="#" className="btn rounded-pill">
               <i className="bi bi-github pe-2"></i>Github
-            </button>
-            <button className="btn rounded-pill">
+            </a>
+            <a href="#" className="btn rounded-pill">
               <i className="bi bi-linkedin pe-2"></i>LinkedIn
-            </button>
-            <button className="btn rounded-pill">
-            <i className="bi bi-person-circle pe-2"></i>Download CV
-            </button>
+            </a>
+            <a
+              href={pdf}
+              className="btn rounded-pill"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="cv_ivanferez.pdf"
+            >
+              <i className="bi bi-person-circle pe-2"></i>Download CV
+            </a>
           </div>
         </div>
       </article>
