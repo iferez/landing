@@ -1,5 +1,5 @@
 import React from "react";
-import {SectionProps} from "./interfaces/types"
+import {SectionProps} from "./types"
 
 
 const Section: React.FC<SectionProps> = ({ children, styles, name }) => {

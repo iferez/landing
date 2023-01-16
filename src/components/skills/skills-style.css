@@ -1,3 +1,13 @@
 .skills{
     background-color: #f7f7f7;
 }
+
+.card ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.card h2{
+    font-size: 56px;
+}

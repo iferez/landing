@@ -6,6 +6,7 @@ export type SectionProps = {
 
 export type ColumProps = {
     children: JSX.Element | JSX.Element[];
+    styles: string,
     widthMobile: Number,
     widthDestok: Number,
   };

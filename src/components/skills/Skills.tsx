@@ -1,53 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Column from "../Column";
+import { dataSkills } from "./dataSkills";
+import {Technologies , Tech} from "./technologies";
 import "./skills-style.css";
 
 function Skills() {
+  const [data, setData] = useState<Technologies>();
+  useEffect(() => {
+    setData(dataSkills);
+  }, []);
+
   return (
     <>
-      <div className="col-12">
-        <h3>SKILLS</h3>
-      </div>
-      <div className="col-md-4">
-        <div className="card">
+      <h2 className="mt-5">SKILLS</h2>
+      <Column widthMobile={12} widthDestok={4} styles="text-center">
+        <div className="card shadow-sm">
           <div className="card-body">
-            <h5 className="card-title">BACKEND</h5>
+            <h3 className="card-title mb-3">BACK END</h3>
             <ul className="card-text">
-              <li>1 lorem</li>
-              <li>2 lorem</li>
-              <li>3 lorem</li>
-              <li>4 lorem</li>
+              {data?.back.map((el: Tech) => (
+                <li key={el.id} className="mb-3">{el.name}</li>
+              ))}
             </ul>
           </div>
         </div>
-      </div>
+      </Column>
 
-      <div className="col-md-4">
-        <div className="card">
+      <Column widthMobile={12} widthDestok={4} styles="text-center">
+        <div className="card shadow-sm">
           <div className="card-body bg-dark text-white">
-            <h5 className="card-title">FRONTEND</h5>
+            <h3 className="card-title mb-3">FRONT END</h3>
             <ul className="card-text">
-              <li>1 lorem</li>
-              <li>2 lorem</li>
-              <li>3 lorem</li>
-              <li>4 lorem</li>
+              {data?.front.map((el: Tech) => (
+                <li key={el.id} className="mb-3">{el.name}</li>
+              ))}
             </ul>
           </div>
         </div>
-      </div>
+      </Column>
 
-      <div className="col-md-4">
-        <div className="card">
+      <Column widthMobile={12} widthDestok={4} styles="text-center">
+        <div className="card shadow-sm">
           <div className="card-body">
-            <h5 className="card-title">DEVELOPER</h5>
+            <h3 className="card-title mb-3">DEVELOPER</h3>
             <ul className="card-text">
-              <li>1 lorem</li>
-              <li>2 lorem</li>
-              <li>3 lorem</li>
-              <li>4 lorem</li>
+              {data?.developer.map((el: Tech) => (
+                <li key={el.id} className="mb-3">{el.name}</li>
+              ))}
             </ul>
           </div>
         </div>
-      </div>
+      </Column>
+
+
     </>
   );
 }
