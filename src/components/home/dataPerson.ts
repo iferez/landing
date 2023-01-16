@@ -8,7 +8,7 @@ export const dataPerson = {
     networks: [
       { name: "Github", link: "https://github.com/iferez" },
       { name: "LinkedIn", link: "https://www.linkedin.com/in/ivanferez/" },
-      { name: "Dowload", link: "cv_ivanferez.pdf" },
+      { name: "Download", link: "cv_ivanferez.pdf" },
     ],
     image: iferez,
   };
