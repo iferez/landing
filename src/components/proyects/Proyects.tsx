@@ -1,4 +1,3 @@
-import React from "react";
 import "./proyects-style.css";
 
 function Proyects() {

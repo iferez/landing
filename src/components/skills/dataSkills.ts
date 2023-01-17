@@ -1,35 +1,26 @@
-import {Technologies} from "./technologies";
-
-export const dataSkills: Technologies = {
-    back: [
-      { id: 1, name: "PHP" },
-      { id: 2, name: "LARAVEL" },
-      { id: 3, name: "SYMFONY" },
-      { id: 4, name: "JAVA" },
-      { id: 5, name: "SPRING" },
-      { id: 6, name: "HIBERNATE" },
-      { id: 7, name: "NODE JS" },
-      { id: 8, name: "NEXT" },
-    ],
-    front: [
-      { id: 1, name: "HTML" },
-      { id: 2, name: "CSS" },
-      { id: 3, name: "JAVASCRIPT" },
-      { id: 4, name: "REACT JS" },
-      { id: 5, name: "MUI" },
-      { id: 6, name: "BOOTSTRAP" },
-      { id: 7, name: "VIEW JS" },
-      { id: 8, name: "SASS" },
-    ],
-    developer: [
-      { id: 1, name: "GIT" },
-      { id: 2, name: "DOCKER" },
-      { id: 3, name: "LINUX" },
-      { id: 4, name: "POSTMAN" },
-      { id: 5, name: "SCRUM" },
-      { id: 6, name: "MVC & TDD" },
-      { id: 7, name: "NPM & YARN" },
-      { id: 8, name: "MYSQL & MONGODB" },
-    ]
-  };
-
+export const dataSkills = [
+  { id: 1, name: "PHP", dev: "BACK END" },
+  { id: 2, name: "LARAVEL", dev: "BACK END" },
+  { id: 3, name: "SYMFONY", dev: "BACK END" },
+  { id: 4, name: "JAVA", dev: "BACK END" },
+  { id: 5, name: "SPRING", dev: "BACK END" },
+  { id: 6, name: "HIBERNATE", dev: "BACK END" },
+  { id: 7, name: "NODE JS", dev: "BACK END" },
+  { id: 8, name: "EXPRESS", dev: "BACK END" },
+  { id: 9, name: "HTML", dev: "FRONT END" },
+  { id: 10, name: "CSS", dev: "FRONT END" },
+  { id: 11, name: "JAVASCRIPT", dev: "FRONT END" },
+  { id: 12, name: "REACT JS", dev: "FRONT END" },
+  { id: 13, name: "MUI", dev: "FRONT END" },
+  { id: 14, name: "BOOTSTRAP", dev: "FRONT END" },
+  { id: 15, name: "VIEW JS", dev: "FRONT END" },
+  { id: 16, name: "SASS", dev: "FRONT END" },
+  { id: 17, name: "GIT", dev: "DEVELOPER" },
+  { id: 18, name: "DOCKER", dev: "DEVELOPER" },
+  { id: 19, name: "LINUX", dev: "DEVELOPER" },
+  { id: 20, name: "POSTMAN", dev: "DEVELOPER" },
+  { id: 21, name: "SCRUM", dev: "DEVELOPER" },
+  { id: 22, name: "MVC & TDD", dev: "DEVELOPER" },
+  { id: 23, name: "NPM & YARN", dev: "DEVELOPER" },
+  { id: 24, name: "MYSQL & MONGODB", dev: "DEVELOPER" },
+];

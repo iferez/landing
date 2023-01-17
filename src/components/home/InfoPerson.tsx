@@ -1,18 +1,9 @@
-import React from "react";
 import Column from "../Column";
 import pdf from "../../assets/ferezivan.pdf";
+import { Person } from "./person";
 
 interface Props {
-  data: {
-    name: string;
-    position: string;
-    description: string;
-    networks: Array<{
-      name: string;
-      link: string;
-    }>;
-    image: string;
-  };
+  data: Person;
 }
 
 function InfoPerson({ data }: Props) {
@@ -39,14 +30,7 @@ function InfoPerson({ data }: Props) {
             download={`${el.name == "Download" ? el.link : ""}`}
           >
             <i className={`bi bi-${el.name.toLocaleLowerCase()} pe-2`}></i>
-            {el.name}{" "}
-            <span
-              className={`${
-                el.name == "Download" ? "d-inline-block" : "d-none"
-              }`}
-            >
-              CV
-            </span>
+            {el.name} {el.name == "Download" && <span> CV</span>}
           </a>
         ))}
       </Column>

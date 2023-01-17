@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Person } from "./person";
 import { dataPerson } from "./dataPerson";
 import InfoPerson from "./InfoPerson";
@@ -19,9 +19,7 @@ function Home() {
   }, []);
 
   return (
-    <>
-      <InfoPerson data={data!} />
-    </>
+      <InfoPerson data={data} />
   );
 };
 

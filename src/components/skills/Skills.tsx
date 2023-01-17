@@ -1,11 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Column from "../Column";
+import { useState, useEffect } from "react";
 import { dataSkills } from "./dataSkills";
-import { Technologies, Tech } from "./technologies";
+import { Technologies } from "./technologies";
+import StackTech from "./StackTech";
 import "./skills-style.css";
 
+const initialSkills = {
+  id: 0,
+  name: "",
+  dev: "",
+};
+
 function Skills() {
-  const [data, setData] = useState<Technologies>();
+  const [data, setData] = useState<Array<Technologies>>([initialSkills]);
   useEffect(() => {
     setData(dataSkills);
   }, []);
@@ -17,51 +23,7 @@ function Skills() {
         I trained for more than 2 years as a web developer, I acquired many
         skills thanks to my work and the university
       </p>
-      
-      <Column widthMobile={12} widthDestok={4} styles="text-center">
-        <div className="card shadow-sm">
-          <div className="card-body">
-            <h3 className="card-title mb-3">BACK END</h3>
-            <ul className="card-text">
-              {data?.back.map((el: Tech) => (
-                <li key={el.id} className="mb-3">
-                  {el.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Column>
-
-      <Column widthMobile={12} widthDestok={4} styles="text-center">
-        <div className="card shadow-sm">
-          <div className="card-body bg-dark text-white">
-            <h3 className="card-title mb-3">FRONT END</h3>
-            <ul className="card-text">
-              {data?.front.map((el: Tech) => (
-                <li key={el.id} className="mb-3">
-                  {el.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Column>
-
-      <Column widthMobile={12} widthDestok={4} styles="text-center">
-        <div className="card shadow-sm">
-          <div className="card-body">
-            <h3 className="card-title mb-3">DEVELOPER</h3>
-            <ul className="card-text">
-              {data?.developer.map((el: Tech) => (
-                <li key={el.id} className="mb-3">
-                  {el.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Column>
+      <StackTech data={data} />
     </>
   );
 }

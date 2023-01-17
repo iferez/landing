@@ -12,11 +12,11 @@ function App() {
       <Section name="home" styles="home-full-screen">
         <Home />
       </Section>
-
+      <hr />
       <Section name="skills" styles="full-screen text-center">
         <Skills />
       </Section>
-
+      <hr />
       <Section name="proyects" styles="full-screen text-center">
         <Proyects />
       </Section>
