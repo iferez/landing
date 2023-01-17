@@ -1,3 +1,7 @@
+.skills p {
+  font-size: 1.2rem;
+}
+
 .card ul {
   list-style-type: none;
   padding: 0;
@@ -5,8 +9,4 @@
 
 .card h2 {
   font-size: 56px;
-}
-
-.skills p {
-  font-size: 1.2rem;
 }

@@ -1,36 +1,30 @@
+import { useEffect, useState } from "react";
+import { Proyect } from "./proyect";
+import { dataProyects } from "./dataProyects";
+import Carousel from "./Carousel";
 import "./proyects-style.css";
 
+const initalProyect = {
+  id: 0,
+  name: "",
+  description: "",
+  image: "",
+};
+
 function Proyects() {
+  const [data, setData] = useState<Array<Proyect>>([initalProyect]);
+  useEffect(() => {
+    setData(dataProyects);
+  }, []);
+
   return (
     <>
-      <h3>PROYECTS</h3>
-
-      <div className="col-md-4">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">Name proyect</h5>
-            <p className="card-text">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-md-4">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">Name proyect</h5>
-            <p className="card-text">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-md-4">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">Name proyect</h5>
-            <p className="card-text">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
+      <h2>PROYECTS</h2>
+      <p>
+        During my journey I was able to work on many projects, thinking in an
+        accessible and user-centered flow.
+      </p>
+      <Carousel data={data} />
     </>
   );
 }
