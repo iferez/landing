@@ -30,7 +30,7 @@ function StackTech({ data }: Props) {
   return (
     <>
     <Card title="BACK END" stack={back} />
-    <Card title="FRONT END" stack={front} styles="bg-dark text-white" />
+    <Card title="FRONT END" stack={front} styles="card-black" />
     <Card title="DEVELOPER" stack={developer} />
     </>
   );

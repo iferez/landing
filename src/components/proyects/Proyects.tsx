@@ -8,6 +8,7 @@ const initalProyect = {
   id: 0,
   name: "",
   description: "",
+  link: "",
   image: "",
 };
 

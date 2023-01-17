@@ -6,24 +6,25 @@ interface Props {
 
 function Carousel({ data }: Props) {
   return (
-    <div id="carousel" className="carousel carousel-dark slide carousel-fade w-75 m-auto" data-bs-ride="carousel">
+    <div
+      id="carousel"
+      className="carousel carousel-dark slide carousel-fade w-75 m-auto"
+      data-bs-ride="carousel"
+    >
       <div className="carousel-inner shadow-lg">
         {data.map((el) => (
           <div
             key={el.id}
             className={`carousel-item ${el.id === 1 ? "active" : ""}`}
           >
-            <img
-              src={el.image}
-              className="d-block w-100"
-              alt={el.name}
-            />
+            <a href={el.link} target="_blank">
+              <img src={el.image} className="d-block w-100" alt={el.name} />
+            </a>
             <div className="mt-4">
-            <h5>{el.name}</h5>
-            <p>{el.description}</p>
+              <h5>{el.name}</h5>
+              <p>{el.description}</p>
             </div>
           </div>
-          
         ))}
       </div>
       <button

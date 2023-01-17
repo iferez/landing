@@ -11,6 +11,7 @@ export const dataProyects = [
     name: "PORTFOLIO",
     description:
       "Web with personal information, about my studies and experience",
+    link: "https://iferez.github.io/",
     image: p1,
   },
   {
@@ -18,6 +19,7 @@ export const dataProyects = [
     name: "AUTOGESTION",
     description:
       "Self-management portal, to make different types of claims on entities",
+    link: "https://iferezautogestion.netlify.app/",
     image: p2,
   },
   {
@@ -25,6 +27,7 @@ export const dataProyects = [
     name: "VECINO COSTERO",
     description:
       "Web of the Municipality of the coast, where a completely new functionality was added for a final work on interfaces",
+    link: "https://lacostainterfaces.netlify.app/home.html",
     image: p3,
   },
   {
@@ -32,18 +35,21 @@ export const dataProyects = [
     name: "CODESARROLLO",
     description:
       "Project aimed at Startups and Companies, oriented to the productive sector of the knowledge economy",
+    link: "https://codesarrolloiferez.netlify.app/",
     image: p4,
   },
   {
     id: 5,
     name: "SISCO",
     description: "Integrated trading system, management of affidavits",
+    link: "https://siscoiferez.netlify.app/",
     image: p5,
   },
   {
     id: 6,
     name: "FATURI",
     description: "Form of acceptance of terms of use of computer resources",
+    link: "https://faturi.netlify.app/",
     image: p6,
   },
 ];
