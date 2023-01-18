@@ -14,7 +14,7 @@ function Card({ stack, title, styles }: Props) {
           <h3 className="card-title mb-3">{title}</h3>
           <ul className="card-text">
             {stack?.map((el) => (
-              <li key={el.id} className="mb-3">
+              <li key={el.id}>
                 {el.name}
               </li>
             ))}

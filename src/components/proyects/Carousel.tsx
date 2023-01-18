@@ -8,7 +8,7 @@ function Carousel({ data }: Props) {
   return (
     <div
       id="carousel"
-      className="carousel carousel-dark slide carousel-fade w-75 m-auto"
+      className="carousel carousel-dark slide carousel-fade"
       data-bs-ride="carousel"
     >
       <div className="carousel-inner shadow-lg">
@@ -20,7 +20,7 @@ function Carousel({ data }: Props) {
             <a href={el.link} target="_blank">
               <img src={el.image} className="d-block w-100" alt={el.name} />
             </a>
-            <div className="mt-4">
+            <div className="info-proyect">
               <h5>{el.name}</h5>
               <p>{el.description}</p>
             </div>

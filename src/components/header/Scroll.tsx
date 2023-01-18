@@ -19,7 +19,7 @@ function Scroll() {
   return (
     <div>
       {showScroll && (
-        <button className="btn btn-dark float" onClick={scrollTop}>
+        <button className="btn btn-dark btn-float" onClick={scrollTop}>
           <i className="bi bi-arrow-up-circle"></i>
         </button>
       )}

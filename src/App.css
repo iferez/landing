@@ -18,18 +18,13 @@ hr{
   margin: auto;
 }
 
+.home-full-screen{
+  padding: 2rem 0rem;
+}
+
 .full-screen{
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 2rem 0rem;
-}
-
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1400px) {
 }
