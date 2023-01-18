@@ -16,7 +16,7 @@
 }
 
 .card:hover {
-  transition: 0.3s;
+  transition: 0.6s;
   background-color: #212529;
   color: #f8f9fa;
   transform: translateY(-1rem);
@@ -28,7 +28,7 @@
 }
 
 .card-black:hover{
-  transition: 0.3s;
+  transition: 0.6s;
   background-color: #003399;
   transform: translateY(-1rem);
 }

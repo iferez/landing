@@ -18,7 +18,7 @@ function Skills() {
 
   return (
     <>
-      <h2 className="mt-5">SKILLS</h2>
+      <h2>SKILLS</h2>
       <p>
         I trained for more than 2 years as a web developer, I acquired many
         skills thanks to my work and the university
