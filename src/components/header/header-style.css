@@ -120,7 +120,7 @@
   .nav-toggle span {
     width: 30px;
     height: 4px;
-    background: rgb(223, 6, 6);
+    background: #030303;
     margin-bottom: 5px;
     border-radius: 2px;
     transform-origin: 5px 0px;
