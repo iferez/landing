@@ -1,7 +1,7 @@
-import { Proyect } from "./proyect";
+import { Project } from "./project";
 
 interface Props {
-  data: Array<Proyect>;
+  data: Array<Project>;
 }
 
 function Carousel({ data }: Props) {
@@ -20,7 +20,7 @@ function Carousel({ data }: Props) {
             <a href={el.link} target="_blank">
               <img src={el.image} className="d-block w-100" alt={el.name} />
             </a>
-            <div className="info-proyect">
+            <div className="info-project">
               <h5>{el.name}</h5>
               <p>{el.description}</p>
             </div>

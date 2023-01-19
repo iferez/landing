@@ -6,10 +6,10 @@ import { useState } from "react";
 interface Ref {
   //RefObject<HTMLDivElement>
   skillsRef: any;
-  proyectRef: any;
+  projectRef: any;
 }
 
-function Header({ skillsRef, proyectRef }: Ref) {
+function Header({ skillsRef, projectRef }: Ref) {
   const scrollToSection = (elementRef: any) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -31,7 +31,7 @@ function Header({ skillsRef, proyectRef }: Ref) {
         <ul className={`nav-items ${isOpen && "open"}`}>
           <li>Home</li>
           <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
-          <li onClick={() => scrollToSection(proyectRef)}>Proyects</li>
+          <li onClick={() => scrollToSection(projectRef)}>Projects</li>
         </ul>
         <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpen(!isOpen)}>
             <span></span>

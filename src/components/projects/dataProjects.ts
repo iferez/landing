@@ -5,7 +5,7 @@ import p4 from "../../assets/img/p4.png";
 import p5 from "../../assets/img/p5.png";
 import p6 from "../../assets/img/p6.png";
 
-export const dataProyects = [
+export const dataProjects = [
   {
     id: 1,
     name: "PORTFOLIO",

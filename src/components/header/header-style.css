@@ -1,6 +1,6 @@
 .header {
   height: 64px;
-  box-shadow: 0px 1px 5px 2px #dbdbdb46 !important;
+  box-shadow: 0px 1px 5px 2px #dbdbdb46;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -10,6 +10,10 @@
   height: 64px;
   display: flex;
   align-items: center;
+}
+
+.header div:last-child {
+  height: auto;
 }
 
 .header img {
@@ -56,6 +60,7 @@
 
 .nav-toggle {
   display: none;
+  height: auto;
 }
 
 .nav-items li {
@@ -78,6 +83,7 @@
   .header ul {
     width: auto;
     padding: 0px;
+
   }
 
   .nav {
@@ -87,12 +93,11 @@
 
   .nav-items {
     position: absolute;
+    visibility: hidden;
     top: 73px;
     right: 0;
     display: flex;
-    align-items: flex-end;
-    transform: translateX(100%);
-    transition: 0.3s ease all;
+    transition: 0.1s ease all;
   }
 
   .nav-items li {
@@ -108,13 +113,14 @@
   }
 
   .nav-items.open {
-    transform: translateX(0);
+    visibility: visible;
+    transition: 0.1s ease all;
   }
 
   .nav-toggle {
     display: flex;
     flex-direction: column;
-    margin-top: 1.4rem;
+    margin-top: 0;
   }
 
   .nav-toggle span {
