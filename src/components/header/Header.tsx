@@ -21,22 +21,24 @@ function Header({ skillsRef, projectRef }: Ref) {
 
   return (
     <Section name="header" styles="w-100">
-      <Column widthMobile={6} widthDestok={6} styles="">
+      <Column widthMobile={6} widthDestok={8} styles="">
         <img
           src="https://static.wixstatic.com/media/d61b43_0cd7fa3e42734f07ac9097028d1a7232~mv2.png/v1/fill/w_199,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20SILVER%20NET%20con%20fondo%20Redondo%20Grande%20(1).png"
           alt="Logo SILVER NET"
         />
       </Column>
-      <Column widthMobile={6} widthDestok={6} styles="nav" >
+      <Column widthMobile={6} widthDestok={4} styles="nav">
         <ul className={`nav-items ${isOpen && "open"}`}>
-          <li>Home</li>
           <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
           <li onClick={() => scrollToSection(projectRef)}>Projects</li>
         </ul>
-        <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpen(!isOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div
+          className={`nav-toggle ${isOpen && "open"}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </Column>
     </Section>
