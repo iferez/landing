@@ -1,6 +1,7 @@
 import Section from "../Section";
 import Column from "../Column";
 import "./header-style.css";
+import logo from "../../assets/img/if2.png";
 import { useState } from "react";
 
 interface Ref {
@@ -23,8 +24,8 @@ function Header({ skillsRef, projectRef }: Ref) {
     <Section name="header" styles="w-100">
       <Column widthMobile={6} widthDestok={8} styles="">
         <img
-          src="https://static.wixstatic.com/media/d61b43_0cd7fa3e42734f07ac9097028d1a7232~mv2.png/v1/fill/w_199,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20SILVER%20NET%20con%20fondo%20Redondo%20Grande%20(1).png"
-          alt="Logo SILVER NET"
+          src={logo}
+          alt="Logo"
         />
       </Column>
       <Column widthMobile={6} widthDestok={4} styles="nav">

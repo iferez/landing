@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Scroll from "./components/header/Scroll";
+import { Email } from "./components/Email";
 import "./App.css";
 
 function App() {

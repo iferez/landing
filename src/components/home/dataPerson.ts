@@ -1,10 +1,10 @@
-import iferez from "../../assets/img/perfiliferezz.png";
+import iferez from "../../assets/img/ivanferezlg.jpg";
 
 export const dataPerson = {
     name: "Iván Ferez",
     position: "Front end developer",
     description:
-      "I design interfaces that allows the user to interaction with digital products in a simple way.",
+      "I develop interfaces that allow the user to interact with digital products in a simple way.",
     networks: [
       { name: "Github", link: "https://github.com/iferez" },
       { name: "LinkedIn", link: "https://www.linkedin.com/in/ivanferez/" },
